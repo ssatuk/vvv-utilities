@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-../common.sh
+source common.sh
 
 DIR=`dirname $0`
 

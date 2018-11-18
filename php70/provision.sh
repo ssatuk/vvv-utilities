@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source common.sh
+
 DIR=`dirname $0`
 
 # PACKAGE INSTALLATION
