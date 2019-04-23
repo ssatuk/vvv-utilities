@@ -30,7 +30,7 @@ apt_package_check_list=(
 
   # Extra PHP modules that we find useful
   php-imagick
-  php-intl
+  php7.2-intl
   php-memcache
   php-memcached
   php-ssh2
@@ -148,7 +148,7 @@ configure() {
   cp "${DIR}/php7.2-fpm.conf" "/etc/php/7.2/fpm/php-fpm.conf"
   cp "${DIR}/php7.2-www.conf" "/etc/php/7.2/fpm/pool.d/www.conf"
   cp "${DIR}/php7.2-custom.ini" "/etc/php/7.2/fpm/conf.d/php-custom.ini"
-  cp "${DIR}/php7.2-custom.ini" "/etc/php/7.2/cli/conf.d/php-custom.ini"
+  #cp "${DIR}/php7.2-custom.ini" "/etc/php/7.2/cli/conf.d/php-custom.ini"
   cp "/srv/config/php-config/opcache.ini" "/etc/php/7.2/fpm/conf.d/opcache.ini"
   cp "/srv/config/php-config/xdebug.ini" "/etc/php/7.2/mods-available/xdebug.ini"
   if [[ -e /srv/config/php-config/mailcatcher.ini ]]; then
@@ -164,7 +164,7 @@ configure() {
   echo " * Copied ${DIR}/php7.2-fpm.conf                   to /etc/php/7.2/fpm/php-fpm.conf"
   echo " * Copied ${DIR}/php7.2-www.conf                   to /etc/php/7.2/fpm/pool.d/www.conf"
   echo " * Copied ${DIR}/php7.2-custom.ini                 to /etc/php/7.2/fpm/conf.d/php-custom.ini"
-  echo " * Copied ${DIR}/php7.2-custom.ini                 to /etc/php/7.2/cli/conf.d/php-custom.ini"
+  #echo " * Copied ${DIR}/php7.2-custom.ini                 to /etc/php/7.2/cli/conf.d/php-custom.ini"
   echo " * Copied /srv/config/php-config/opcache.ini       to /etc/php/7.2/fpm/conf.d/opcache.ini"
   echo " * Copied /srv/config/php-config/xdebug.ini        to /etc/php/7.2/mods-available/xdebug.ini"
 
