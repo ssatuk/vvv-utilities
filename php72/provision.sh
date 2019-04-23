@@ -30,6 +30,7 @@ apt_package_check_list=(
 
   # Extra PHP modules that we find useful
   php-imagick
+  php-intl
   php-memcache
   php-memcached
   php-ssh2
