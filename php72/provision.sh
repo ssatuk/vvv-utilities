@@ -44,6 +44,7 @@ apt_package_check_list=(
   php7.2-json
   php7.2-soap
   php7.2-xml
+  php7.2-xmlrpc
   php7.2-zip
 )
 
